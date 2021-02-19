@@ -1,0 +1,27 @@
+.card {
+  z-index: 2;
+  background-color: $offWhite;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  overflow: hidden;
+
+  &-bg-img {
+    width: 100%;
+    height: auto;
+  }
+  &-profile-img {
+    z-index: 3;
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    border-radius: 50%;
+    border: solid $offWhite 5px;
+  }
+  &-name-content {
+    margin-top: 15%;
+  }
+}
