@@ -16,12 +16,34 @@
   &-profile-img {
     z-index: 3;
     position: absolute;
-    top: 25%;
-    left: 38%;
+    top: 37.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     border: solid $offWhite 5px;
   }
   &-name-content {
-    margin-top: 15%;
+    margin-top: 20%;
+
+    p {
+      margin-left: 10px;
+    }
+  }
+
+  #city {
+    padding: 5px;
+    margin-bottom: 1.5em;
+    font-size: 1rem;
+  }
+}
+
+.grid {
+  h1 {
+    padding: 20% 10% 0 10%;
+  }
+
+  p {
+    font-size: 0.75rem;
+    padding: 0 10% 20% 10%;
   }
 }

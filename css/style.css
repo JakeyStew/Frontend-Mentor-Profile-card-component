@@ -9,11 +9,11 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Kumbh Sans", sans-serif;
   line-height: 1.2;
   font-size: 1.125rem;
@@ -62,6 +62,11 @@ p {
           justify-content: space-between;
 }
 
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .flex-jc-c {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -72,6 +77,14 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
 .card {
@@ -95,13 +108,34 @@ p {
 .card-profile-img {
   z-index: 3;
   position: absolute;
-  top: 25%;
-  left: 38%;
+  top: 37.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-radius: 50%;
   border: solid #f2f2f2 5px;
 }
 
 .card-name-content {
-  margin-top: 15%;
+  margin-top: 20%;
+}
+
+.card-name-content p {
+  margin-left: 10px;
+}
+
+.card #city {
+  padding: 5px;
+  margin-bottom: 1.5em;
+  font-size: 1rem;
+}
+
+.grid h1 {
+  padding: 20% 10% 0 10%;
+}
+
+.grid p {
+  font-size: 0.75rem;
+  padding: 0 10% 20% 10%;
 }
 /*# sourceMappingURL=style.css.map */

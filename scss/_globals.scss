@@ -6,10 +6,10 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-body {
   margin: 0;
   padding: 0;
+}
+body {
   font-family: "Kumbh Sans", sans-serif;
   line-height: 1.2;
   font-size: $font-med;
@@ -50,10 +50,19 @@ p {
   &-jc-sb {
     justify-content: space-between;
   }
+  &-jc-sa {
+    justify-content: space-around;
+  }
   &-jc-c {
     justify-content: center;
   }
   &-ai-c {
     align-items: center;
   }
+}
+//Grid
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
